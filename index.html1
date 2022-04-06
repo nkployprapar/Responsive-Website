@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profile"> 
+    <title>NK Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <img class="logo" src="/glurgeek/img/LOGO.svg" alt="logo">
+                <div class="links">
+                    <a href="#">About</a>
+                    <a href="#">Docs</a>
+                    <button class="button_1" href="#">Login</button>
+                </div> 
+            </nav>
+        </header>
+
+        <!-- Contents-->
+        <section class="info">
+            <h1 class="content_font1">Online Creative Community</h1>
+            <h4 class="content_font2">By Nk. Ployprapar wansirikit</h4>
+            <div class="icons">
+                <div class="icon">
+                    <img src="/glurgeek/img/Vector.svg" alt="email">
+                    <p class="icon_info">ployprapar.wans@bumail.net</p>
+                </div>
+                <div class="icon">
+                    <img src="/glurgeek/img/facebook-svgrepo-com 1.svg" alt="facebook">
+                    <p class="icon_info">Nick kik</p>
+                </div>
+                <div class="icon">
+                    <img src="/glurgeek/img/youtube-svgrepo-com 1.svg" alt="youtube">
+                    <p class="icon_info">ployprapar wansirikit</p>
+                </div>
+                <div class="icon">
+                    <img src="/glurgeek/img/twitter-svgrepo-com 1.svg" alt="twitter">
+                    <p class="icon_info">nknickik</p>
+                </div>
+            </div>
+        </section>
+[1:13 AM]
+<!-- Feature Bar -->
+        <section class="features">
+            <div class="feature">
+                <img src="/glurgeek/img/pexels-ruslan-burlaka-140945 1.jpg" alt="Programing">
+                <div class="feature_info">
+                    <p class="feature_top">Programing</p>
+                    <p class="feature_bottom">Enjoy Coding and Playing 
+                        HTML, CSS, JavaScripts</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="/glurgeek/img/pexels-lj-2085831 1.jpg" alt="AIot">
+                <div class="feature_info">
+                    <p class="feature_top">AIoT & Robotics</p>
+                    <p class="feature_bottom">Enjoy Coding and Playing 
+                        Python, ROS, Mechanict</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature_info">
+                    <p class="feature_more">Learn More</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

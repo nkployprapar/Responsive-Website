@@ -1,0 +1,196 @@
+/*Add fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,300;1,400&display=swap');
+
+/* All class using same dataset */
+:root {
+    /* Define Variable */
+    --accent : #86402b; /* Button color from figma */
+    --accentHover : #ffffff; /* Mouse Hover */ 
+    --dark60 : rgb(255, 255, 255);
+    --light : #ffffff;
+    --transition : all 0.3s ease 0s
+}
+
+/* All Section */
+*{
+    /* Clear margin and padding */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    /*background: linear-gradient(
+        var(--dark60), var(--dark60)
+    ), 
+    url(./glurgeek/img/background.jpg); */ 
+    background-image: url(./glurgeek/img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a, button, p{
+    font-family: 'Kanit', sans-serif;
+    color: var(--light);
+}
+
+a, button, .logo{
+    cursor: pointer;
+}
+
+main{
+    height: 100;
+    display: grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px))
+    minmax(60px, 1fr);
+}
+
+header{
+    grid-column: 1 / span 7;
+    margin-left: 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.links{
+    margin-left: auto;
+}
+
+.links a, .links button{
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.links a:hover{
+    color: var(--accentHover);
+}
+
+.button_1{
+    border: none;
+    background-color: var(--accent);
+    padding: 8px 20px;
+    transition: var(--transition);
+}
+
+.button_1:hover{
+    color: var(--accentHover);
+}
+
+.info{
+    grid-column: 3 / span 4;
+    margin-top: 23%;
+    text-align: center;
+}
+
+.content_font1{
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 3.5rem;
+}
+
+.content_font2{
+    font-family: 'Kanit', sans-serif;
+    color: var(--light);
+    font-size: 1.5rem;
+}
+
+.icons{
+    margin-top: 10%;
+    display: flex;
+}
+
+.icon{
+    margin-right: 110px;
+}
+
+.icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.icon_info{
+    text-align: center;
+}
+
+.features{
+    grid-column: 2 / span 7;
+    background-color: #3E3736;
+    margin-top: 6%;
+    /* top right bottom left */
+    padding: 5px 0px 0px 3px;
+    display: flex;
+    align-items: left;
+}
+
+.feature{
+    display: flex;
+    /* top right bottom left */
+    margin: 0px 10px 30px 10px ;
+}
+
+.feature img{
+    width: 160px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.feature_infp p{
+    color: #ffffff;
+}
+
+.feature_top, .feature_more{
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature_bottom{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.feature:nth-child(3){
+    align-self: flex-start;
+}
+
+.feature_more{
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.feature_more:hover{
+    color: var(--accent);
+}
+
+/* Responsive Website */
+@media only screen and (max-width:1100px) {
+    .icon img{
+        height: 100px;
+        width: auto;
+    }   
+    .content_font1, .content_font2{
+        font-size: 2.75rem;
+    }
+    .feature{
+        grid-column: 1 / span 7;
+    }
+}
+
+@media only screen and (max-width:850px){
+    .info{
+        grid-column: 2 / span 7;
+    }
+    
+}
